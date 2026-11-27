@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sport Manager: Athlete &amp; Coach – Target Sports Analysis</title>
+<meta name="description" content="Sport Manager: Athlete &amp; Coach : une seule appli pour jouer, entraîner, organiser la saison et se former. Éditée par Target Sports Analysis.">
+<style>
+  :root{
+    --fond:#F4F3EF; --carte:#FFFFFF; --texte:#171918; --texte2:#626760;
+    --bord:#DEDFD8; --sombre:#000000; --rouge:#F80000; --accent:#171918;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--fond);color:var(--texte);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px;line-height:1.55}
+  a{color:var(--accent)}
+  header{background:var(--sombre);color:#F4F3EF}
+  .barre{max-width:960px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;
+    align-items:center;justify-content:space-between;gap:10px}
+  .logo{display:block;line-height:0}
+  .logo img{height:56px;width:auto}
+  nav{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px}
+  nav a{color:#D9DCD5;text-decoration:none;padding:6px 0}
+  nav a[aria-current]{color:#fff;font-weight:700;border-bottom:2px solid var(--rouge)}
+  .hero{background:var(--sombre);color:#F4F3EF;overflow:hidden;position:relative}
+  .hero .in{max-width:960px;margin:0 auto;padding:40px 20px 60px;position:relative;z-index:1}
+  .eclair{position:absolute;right:-60px;top:0;bottom:0;width:300px;background:var(--rouge);
+    clip-path:polygon(45% 0,100% 0,100% 100%,0 100%)}
+  @media (max-width:700px){.eclair{top:auto;height:54px;width:190px;right:-30px}}
+  .sur{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#B4B8B0;margin:0 0 10px}
+  h1{font-size:clamp(34px,8vw,60px);line-height:1;margin:0 0 16px;font-weight:900;
+    font-style:italic;text-transform:uppercase;letter-spacing:-.5px}
+  h1 em{color:var(--rouge);font-style:italic}
+  .hero p{max-width:520px;margin:0;color:#D9DCD5;font-size:17px}
+  main{max-width:960px;margin:0 auto;padding:36px 20px 20px}
+  h2{font-style:italic;font-weight:800;font-size:26px;margin:0 0 6px}
+  .intro{color:var(--texte2);margin:0 0 22px}
+  .grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .module{background:var(--carte);border:1px solid var(--bord);border-radius:14px;
+    padding:18px 18px 16px;border-top:6px solid var(--c)}
+  .module h3{margin:0 0 4px;font-style:italic;font-weight:800;font-size:19px}
+  .module h3 b{color:var(--c)}
+  .pour{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--texte2);margin:0 0 8px}
+  .module p{margin:0;font-size:15px}
+  .etat{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;
+    padding:3px 9px;border-radius:99px;background:#EEEDE8;color:var(--texte2)}
+  .bloc{background:var(--carte);border:1px solid var(--bord);border-radius:14px;padding:20px;margin:28px 0 0}
+  .bloc h2{font-size:21px}
+  .bloc ul{margin:8px 0 0;padding-left:20px}
+  footer{max-width:960px;margin:0 auto;padding:28px 20px 40px;color:var(--texte2);font-size:14px;
+    display:flex;flex-wrap:wrap;gap:8px 18px}
+  footer a{color:var(--texte2)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="barre">
+    <a class="logo" href="index.html"><img src="logo.png" alt="Sport Manager: Athlete &amp; Coach" height="56"></a>
+    <nav aria-label="Menu principal">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="cgu.html">CGU</a>
+      <a href="contact.html">Contact</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="eclair" aria-hidden="true"></div>
+  <div class="in">
+    <h1>Une seule appli,<br><em>tout le sport.</em></h1>
+    <p>Sport Manager: Athlete &amp; Coach réunit dans une même application tout ce qu'il faut pour jouer, entraîner, organiser la saison et se former. Un seul compte, et chaque module s'ouvre à l'intérieur.</p>
+  </div>
+</section>
+
+<main>
+  <h2>Les modules</h2>
+  <p class="intro">Sport Manager: Athlete &amp; Coach est pensé pour tous les sports, et disponible en français, en anglais et en espagnol.</p>
+
+  <div class="grille">
+    <article class="module" style="--c:#D20142">
+      <h3>Skate <b>Manager</b></h3>
+      <p class="pour">Fans, patineurs, familles</p>
+      <p>Le jeu de pronostics du roller de vitesse, et la porte d'entrée de la famille.</p>
+    </article>
+    <article class="module" style="--c:#02776A">
+      <h3>Coach <b>Manager</b></h3>
+      <p class="pour">Entraîneurs</p>
+      <p>Le terrain : préparer, lancer et faire le bilan de la séance, avec les outils du bord de piste.</p>
+    </article>
+    <article class="module" style="--c:#0B60CF">
+      <h3>Plan <b>Manager</b></h3>
+      <p class="pour">Entraîneurs</p>
+      <p>Le bureau : planning, saison et suivi des athlètes.</p>
+    </article>
+    <article class="module" style="--c:#A65F02">
+      <h3>Club <b>Manager</b></h3>
+      <p class="pour">Clubs, parents, encadrants</p>
+      <p>Adhérents, compétitions, déplacements et vie du club.</p>
+    </article>
+    <article class="module" style="--c:#8866D7">
+      <h3>My <b>Manager</b></h3>
+      <p class="pour">Athlètes</p>
+      <p>Ses chronos, ses records, son matériel et son ressenti.</p>
+    </article>
+    <article class="module" style="--c:#D06545">
+      <h3>Training <b>Manager</b></h3>
+      <p class="pour">Entraîneurs, structures</p>
+      <p>Livres et formations pour se former et progresser.</p>
+    </article>
+    <article class="module" style="--c:#4B5C75">
+      <h3>Analysis <b>Manager</b></h3>
+      <p class="pour">Entraîneurs, analystes</p>
+      <p>L'analyse vidéo poussée : comparaisons et rapports.</p>
+    </article>
+  </div>
+
+  <section class="bloc">
+    <h2>Qui sommes-nous ?</h2>
+    <p>Sport Manager: Athlete &amp; Coach est édité par <strong>Target Sports Analysis</strong>, créée par des entraîneurs de haut niveau, spécialistes de l'analyse vidéo. L'application est conçue comme l'assistant du coach : elle s'adapte à sa façon de travailler, sans rien lui imposer.</p>
+  </section>
+
+  <section class="bloc">
+    <h2>Informations</h2>
+    <ul>
+      <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+      <li><a href="cgu.html">Conditions d'utilisation (CGU)</a></li>
+      <li><a href="mentions-legales.html">Mentions légales</a></li>
+      <li><a href="contact.html">Nous contacter</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 Target Sports Analysis</span>
+  <a href="mentions-legales.html">Mentions légales</a>
+  <a href="confidentialite.html">Confidentialité</a>
+  <a href="cgu.html">CGU</a>
+  <a href="contact.html">Contact</a>
+</footer>
+
+</body>
+</html>
